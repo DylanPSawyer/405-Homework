@@ -7,78 +7,229 @@
   <title>Document</title>
 </head>
 <body>
+<style>
+  body{
+    padding: 15px;
+  }
+  ul#vocab-list ul li{
+    padding: 10px 0%;
 
-  Put a header 1 here with the content "Your first name - Your Major"
+  }
+  div#reflection{
+    padding: 5%;
+    text-align: center;
+  }
 
-  Put a paragraph element here with the content being a few sentences as to why you are taking this course
+</style>
 
-  Put a header 2 here with the content "The HTML Elements I Know"
-
-  Create a list (ordered or unordered) here with a structure similar to following:
-  - Element Name
-    - A clickable link to the MDN official document. Make sure this opens in a new browser tab
-    - Display: Inline or Block
-    - Attributes
-      - Name of attribute : Description
-      - List the rest of the attributes for this element (up to a max of 3)
-  - List 5 more (for a total of six element names)
-
-  Put a header 2 here with the content "My Website Directory Structure"
-
-  Create a list here that will show the directory structure that is recommended by MDN from this <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files#What_structure_should_your_website_have">link</a>.
-  Like this:
-  - My Website Directory
-    - index.html
-    - The other directories
+<h1>Dylan Sawyer - Computer Information Systems</h1>
+<p>
+  Despite being employed full time as a Web Developer, I am required to take this course for my major.
+  <br/>
+  I am thinking about doing the final one of the next weekends
+</p>
+<h2>The HTML Elements I Know</h2>
+<ul id="elements-list">
+    <li>
+        script:
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">MDN Script Element</a></li>
+          <li>Display: It's content won't be displyed, So I guess "display:none"</li>
+          <li>Attributes:
+            <ul>
+                <li>async: This is a Boolean attribute indicating that the browser should, if possible, execute the script asynchronously</li>
+                <li>src: This attribute specifies the URI of an external script; this can be used as an alternative to embedding a script directly within a document.</li>
+                <li>defer: This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded.</li>
+            </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+        style:
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">MDN style Element</a></li>
+          <li>Display: It's content won't be displyed, So I guess "display:none"</li>
+          <li>Attributes:
+            <ul>
+              <li>type: This attribute defines the styling language as a MIME type (charset should not be specified). This attribute is optional and defaults to text/css if it is not specified — there is very little reason to include this in modern web documents.</li>
+              <li>media: This attribute defines which media the style should be applied to. Its value is a media query, which defaults to all if the attribute is missing.</li>
+              <li>title: This attribute specifies alternative style sheet sets.</li>
+            </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+        img:
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">MDN img Element</a></li>
+          <li>display:inline</li>
+          <li>Attributes:
+            <ul>
+              <li>width:The intrinsic width of the image in pixels.</li>
+              <li>heigt: The intrinsic height of the image in pixels.</li>
+              <li>src: The image URL.</li>
+            </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+        strong:
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">MDN strong Element</a></li>
+          <li>display:inline</li>
+          <li>Attributes: only the global attributes</li>
+      </ul>
+    </li>
+    <li>
+        em:
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">MDN em Element</a></li>
+          <li>display:inline</li>
+          <li>Attributes: only the global attributes</li>
+      </ul>
+    </li>
+    <li>
+        span:
+      <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">MDN span Element</a></li>
+          <li>display:inline</li>
+          <li>Attributes: only the global attributes</li>
+      </ul>
+    </li>
+</ul>
+<h2>My Website Directory Structure</h2>
+<ul>
+    <li>My Website Directory:
+        <ul>
+            <li>index.html</li>
+            <li>images</li>
+            <li>styles</li>
+            <li>scripts</li>
+        </ul>
+    </li>
+</ul>
 
   Create a header 2 with the content "Vocab Definitions"
+  <h2>Vocab Definitions</h2>
+<ul id="vocab-list">
+  <li>
+    HTTP
+      <ul>
+         <li>My Definition: Http(Hyper Text Transfer Protocol) is the communication protocol used by most to access the World Wide Web</li>
+         <br/>
+         <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTTP" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/HTTP</a><br/>: The HyperText Transfer Protocol (HTTP) is the underlying network protocol that enables transfer of hypermedia documents on the Web, typically between a browser and a server so that humans can read them. The current version of the HTTP specification is called HTTP/2.</li>
+      </ul>
+  </li>
+  <li>
+      HTML
+        <ul>
+           <li>My Definition: HTML(Hyper Text Markup language) The Markup Langauge created to describe a web page, it is read by browsers</li>
+           <br/>
+           <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/HTML</a><br/>: HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.</li>
+        </ul>
+    </li>
+    <li>
+        Element
+          <ul>
+             <li>My Definition:  A piece of the HTML syntax, consists of, Opening Tag, Content, and Closing tag</li>
+             <br/>
+             <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Element" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/Element</a><br/>: An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag</li>
+          </ul>
+      </li>
+      <li>
+          Tag
+            <ul>
+               <li>My Definition: A piece of HTML or XML syntax which wraps the content of an element </li>
+               <br/>
+               <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/tag" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/tag</a><br/> In HTML a tag is used for creating an element.  The name of an HTML element is the name used in angle brackets such as &lt;p&gt; for paragraph.  Note that the end tag's name is preceded by a slash character, &lt;/p&gt;, and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case. </li>
+            </ul>
+        </li>
+        <li>
+            Block (CSS)
+              <ul>
+                 <li>My Definition: An HTML document that forces itself to be created on a newline </li>
+                 <br/>
+                 <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Block/CSS" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/Block/CSS</a><br/> A block on a webpage is an HTML element that appears on a new line, i.e. underneath the preceding element in a horizontal writing mode, and above the following element (commonly known as a block-level element). For example, &lt;p&gt; is by default a block-level element, whereas &lt;a&gt; is an inline element — you can put several links next to one another in your HTML source and they will sit on the same line as one another in the rendered output.</li>
+              </ul>
+          </li>
+          <li>
+              Doctype
+                <ul>
+                   <li>My Definition: Doctype specifies what version of HTML an HTML document is using ie:HTML5 vs HTML4.01</li>
+                   <br/>
+                   <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/Doctype</a><br/> In HTML, the doctype is the required "&lt;!DOCTYPE html&gt;" preamble found at the top of all documents. Its sole purpose is to prevent a browser from switching into so-called “quirks mode” when rendering a document; that is, the "&lt;!DOCTYPE html&gt;" doctype ensures that the browser makes a best-effort attempt at following the relevant specifications, rather than using a different rendering mode that is incompatible with some specifications.</li>
+                </ul>
+            </li>
+            <li>
+                Head
+                  <ul>
+                     <li>My Definition: HTML element before the body element, largley contains un dispalyed meta-data and calls to external stylesheets or scripts</li>
+                     <br/>
+                     <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/head" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/head</a><br/> The Head is the part of an HTML document that contains metadata about that document, such as author, description, and links to CSS or JavaScript files that should be applied to the HTML.</li>
+                  </ul>
+              </li>
+              <li>
+                  Attribute
+                    <ul>
+                       <li>My Definition: Declared inside the opening tag of an HTML element, specifies behavior of the element for example the "href" in an a element </li>
+                       <br/>
+                       <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/attribute" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/attribute</a><br/>An attribute extends a tag, changing its behavior or providing metadata. An attribute always has the form name=value (the attribute's identifier followed by its associated value).</li>
+                    </ul>
+                </li>
+                <li>
+                    Boolean
+                      <ul>
+                         <li>My Definition: A data type repesenting a binary true or false(1 or 0) value, it is used in various programming langauges like Javascript(despite being non-strongly typed), C++, PHP, Java, etc</li>
+                         <br/>
+                         <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/boolean" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/boolean</a><br/> In computer science, a Boolean is a logical data type that can have only the values true or false. For example, in JavaScript, Boolean conditionals are often used to decide which sections of code to execute (such as in if statements) or repeat (such as in for loops).</li>
+                      </ul>
+                  </li>
+                  <li>
+                      DOM 
+                        <ul>
+                           <li>My Definition: The Document Object Model, used by Javascript to represent, and modify the HTML elements on the webpage </li>
+                           <br/>
+                           <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/dom" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/dom</a><br/> The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML document. The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document (e.g. an element, text string, or comment).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        CSS 
+                          <ul>
+                             <li>My Definition: CSS Cascading Style Sheets, is a syntax that can be read by browsers, it is used to style an html document. It can be placed in a linked external .css file or emmbbed on the page inside a style element </li>
+                             <br/>
+                             <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/css" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/css</a><br/> CSS (Cascading Style Sheets) is a declarative language that controls how webpages look in the browser. The browser applies CSS style declarations to selected elements to display them properly. A style declaration contains the properties and their values, which determine how a webpage looks.</li>
+                          </ul>
+                      </li>
+                      <li>
+                          Property (CSS)
+                            <ul>
+                               <li>My Definition: A key-value pair placed inside a CSS Selector which gives some description of how to display the selected element(s) in an HTML file</li>
+                               <br/>
+                               <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/property/css" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/property/css</a><br/>A CSS property is a characteristic (like color) whose associated value defines one aspect of how the browser should display the element.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Selector (CSS)
+                              <ul>
+                                 <li>My Definition: Found in CSS it is a combination of HTML Classes, Element types and HTML ID's used to select a specific element or range of elements in a HTML document, functions sort of like a file path </li>
+                                 <br/>
+                                 <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector" target="_blank">https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector</a><br/> A CSS selector is the part of a CSS rule that describes what elements in a document the rule will match. The matching elements will have the rule's specified style applied to them.</li>
+                              </ul>
+                          </li>
+</ul>
 
+<div id="reflection">
+  <h2 >Reflection</h2>
 
-  Create a list here for the following vocab words (fill in the definition) and the source
-  P.S. This is the best (and only resource you will need) to do everything below: https://developer.mozilla.org/en-US/docs/Glossary
-  - HTTP
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - HTML
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Element
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Tag
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Block (CSS)
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Doctype
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Head
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Attribute
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Boolean
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - DOM
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - CSS
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Property (CSS)
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
-  - Selector (CSS)
-    - Definition (your own words), try to keep it short (no more than a sentence or two) if possible
-    - Source (from official MDN documents) as a clickable link that opens in a new tab
+  <p>
+    My experience during the last three weeks has been positive. I enjoyed missing the first day of class. The next two weeks served largley as review, however several of the points mentioned in the lectures have been informative allowing me to learn more about concepts I m already familiar with. 
+    This document, while somewhat tedious really reinforced my understanding of lists. I also learned the name of the anchor element, which I had always just called the "a". This renforcement will certainly help my avoid minor embrassments at work.
+  </p>
+  <p>
+    During the two days of in class work I have had the oppurtunity to help my fellow students. This was an awesome oppurtuity for me as it allowed me to practice my teaching skills.
+    It also always makes you feel good to help people. Despite already knowing the vast majority of course content I look forward the the rest of the semester and any tidbits or perhaps even major concepts I have missed along the way. Overall, the first three weeks have been great.
+  </p>
 
-  Put a heading 2 here with the content "Reflection"
-
-  Using paragraph elements to separate you paragraphs, briefly describe your experience in the class in the last three weeks. 1-2 paragraphs is fine, but feel free to write more if you want
-
+</div>
 </body>
 </html>
