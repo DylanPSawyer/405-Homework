@@ -1,0 +1,63 @@
+body{
+    padding: 0 10%;
+}
+body#details{
+    padding: 0 2%;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 0;
+    color: green;
+    font-size: 64px;
+    text-decoration: underline;
+}
+#main-page-header-image{
+    max-width: 600px;
+    height: auto;
+}
+
+table#nutrition-table,
+table#nutrition-table th,
+ table#nutrition-table td {
+    text-align: center;
+    border: 3px double black;
+}
+
+table#nutrition-table th,
+table#nutrition-table td{
+    padding: 25px;
+}
+table#details-table,
+table#details-table th,
+table#details-table td {
+    text-align: center;
+    border: 3px inset black;
+}
+table#details-table th,
+table#details-table td{
+    width: 25%;
+    padding: 2%;
+}
+table#details-table td a{
+    padding: 5%;
+    color: darkblue;
+    text-decoration: none;
+}
+table#details-table td a:hover{
+    color: gold;
+    text-decoration: none;
+}
+a h2{
+    color: dodgerblue;
+    text-decoration: none;
+}
+a h2:hover{
+    color: gold;
+    cursor: pointer;
+}
+.details-image{
+    max-width: 200px;
+    height: auto;
+}
